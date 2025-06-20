@@ -4,9 +4,9 @@ import numpy as np
 import joblib
 
 # === 1. 加载模型与编码器 ===
-dose_model = joblib.load("C:/Users/wyk/Desktop/predict_web/best_model_dose_Gradient Boosting.pkl")  # 请根据训练结果改成对应文件
-drug_model = joblib.load("C:/Users/wyk/Desktop/predict_web/best_model_drug_XGBoost.pkl")             # 请根据训练结果改成对应文件
-drug_encoder = joblib.load("C:/Users/wyk/Desktop/predict_web/drug_encoder.pkl")
+dose_model = joblib.load("best_model_dose_Gradient Boosting.pkl")  # 请根据训练结果改成对应文件
+drug_model = joblib.load("best_model_drug_XGBoost.pkl")             # 请根据训练结果改成对应文件
+drug_encoder = joblib.load("drug_encoder.pkl")
 
 # === 2. 页面设置 ===
 st.set_page_config(page_title="Gn促排方案智能推荐系统", layout="centered")
